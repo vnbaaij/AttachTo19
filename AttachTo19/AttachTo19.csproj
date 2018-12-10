@@ -28,8 +28,8 @@
     <ProjectGuid>{ABA0EB3B-52B7-4F04-8ED0-98404A9D1C25}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AttachTo</RootNamespace>
-    <AssemblyName>AttachTo</AssemblyName>
+    <RootNamespace>AttachTo19</RootNamespace>
+    <AssemblyName>AttachTo19</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>

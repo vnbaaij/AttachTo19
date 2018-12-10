@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+  <Commands package="guidAttachToPackage">
+    <Groups>
+      <Group guid="guidAttachToPackageCmdSet" id="AttachToMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
+      </Group>
+    </Groups>
+    <Buttons>
+      <Button guid="guidAttachToPackageCmdSet" id="AttachToIISId" priority="0x0100" type="Button">
+        <Parent guid="guidAttachToPackageCmdSet" id="AttachToMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>cmdidAttachToIIS</CommandName>
+          <ButtonText>Attach to IIS</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidAttachToPackageCmdSet" id="AttachToIISExpressId" priority="0x0100" type="Button">
+        <Parent guid="guidAttachToPackageCmdSet" id="AttachToMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>cmdidAttachToIISExpress</CommandName>
+          <ButtonText>Attach to IIS Express</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidAttachToPackageCmdSet" id="AttachToNUnitId" priority="0x0100" type="Button">
+        <Parent guid="guidAttachToPackageCmdSet" id="AttachToMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>cmdidAttachToNUnit</CommandName>
+          <ButtonText>Attach to NUnit</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+    <Bitmaps>
+      <Bitmap guid="guidImages" href="Resources\AttachTo.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough" />
+    </Bitmaps>
+  </Commands>
+  <Symbols>
+    <GuidSymbol name="guidAttachToPackage" value="{4324de84-99e1-4732-bd0c-8af14184c59c}" />
+    <GuidSymbol name="guidAttachToPackageCmdSet" value="{03b7f10f-7fbb-45f5-88cb-c9d93a45e7be}">
+      <IDSymbol name="AttachToMenuGroup" value="0x1020" />
+      <IDSymbol name="AttachToIISId" value="0x0100" />
+      <IDSymbol name="AttachToIISExpressId" value="0x0101" />
+      <IDSymbol name="AttachToNUnitId" value="0x0102" />
+    </GuidSymbol>
+    <GuidSymbol name="guidImages" value="{c72e3769-2aa0-4235-8ed6-037ea1063947}">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+    <GuidSymbol value="{584d5b6d-76aa-4008-8197-a636a50ba2d1}" name="guidImages1">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
